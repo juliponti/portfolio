@@ -28,7 +28,7 @@ export default function Navlinks() {
         {navlinks.map(({ name, href }) => (
           <li
             key={name}
-            className="uppercase tracking-[0.15rem] ml-7 text-xs hover:text-[#a5b89f]"
+            className="uppercase tracking-[0.110rem]  ml-7 text-xs hover:text-secondary"
           >
             <a href={href}>{name}</a>
           </li>
