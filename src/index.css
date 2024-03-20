@@ -23,10 +23,19 @@
 }
 
 @layer utilities {
+  h1,
+  h3,
+  h4,
+  p,
   .main-logo {
     font-family: "Lora", serif;
-    text-transform: lowercase;
     letter-spacing: 0.25rem;
     font-weight: lighter;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
   }
 }
