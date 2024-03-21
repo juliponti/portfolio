@@ -36,7 +36,7 @@ export default function RecentWork() {
 
               <a
                 href={link}
-                className="h-full w-full flex justify-center absolute top-0 left-0 items-center bg-primary text-white opacity-0 rounded-2xl hover:opacity-90 transition-all"
+                className="h-full w-full flex justify-center absolute top-0 left-0 items-center bg-primary-300 text-white opacity-0 rounded-2xl hover:opacity-90 transition-all"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -47,7 +47,7 @@ export default function RecentWork() {
         </div>
         <a
           href="/projects"
-          className="uppercase tracking-widest text-sm hover:text-secondary"
+          className="uppercase tracking-widest text-sm hover:text-primary-200"
         >
           view all work
         </a>

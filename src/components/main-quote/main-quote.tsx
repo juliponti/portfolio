@@ -6,7 +6,7 @@ export default function MainQuote() {
           Investing my passion to advance your aspirations
         </h3>
         <a
-          className="uppercase tracking-[0.15rem] transition-all text-sm hover:text-secondary"
+          className="uppercase tracking-[0.15rem] transition-all text-sm hover:text-primary-200"
           href="/about"
         >
           Learn more

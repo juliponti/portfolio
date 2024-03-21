@@ -1,3 +1,6 @@
+import Contact from "../../components/contact/contact";
+import Experience from "../../components/experience/experience";
+import Footer from "../../components/footer/footer";
 import Header from "../../components/header";
 import MainQuote from "../../components/main-quote/main-quote";
 import Navbar from "../../components/navbar";
@@ -8,8 +11,13 @@ export default function Home() {
     <div>
       <Navbar />
       <Header />
-      <MainQuote />
-      <RecentWork />
+      <main>
+        <MainQuote />
+        <RecentWork />
+        <Contact />
+        <Experience />
+      </main>
+      <Footer />
     </div>
   );
 }
