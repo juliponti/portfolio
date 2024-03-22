@@ -20,13 +20,23 @@
     text-decoration: none;
     color: inherit;
   }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: #656f62;
+  }
+
+  ::selection {
+    color: #2c2c2c;
+    background: #a5b89f;
+  }
 }
 
 @layer utilities {
   h1,
   h3,
   h4,
-  p,
   .main-logo {
     font-family: "Lora", serif;
     letter-spacing: 0.25rem;
@@ -37,5 +47,22 @@
     max-width: 1200px;
     width: 80%;
     margin: 0 auto;
+  }
+
+  .copyright {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+  }
+
+  .card-shadow {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05),
+      0 20px 30px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .front,
+  .back {
+    backface-visibility: hidden;
   }
 }

@@ -12,10 +12,6 @@ const navlinks = [
     href: "/about",
   },
   {
-    name: "Experience",
-    href: "/experience",
-  },
-  {
     name: "Contact",
     href: "/contact",
   },
@@ -28,7 +24,7 @@ export default function Navlinks() {
         {navlinks.map(({ name, href }) => (
           <li
             key={name}
-            className="uppercase tracking-[0.110rem]  ml-7 text-xs hover:text-secondary"
+            className="uppercase tracking-[0.110rem]  ml-7 text-xs hover:text-primary-200"
           >
             <a href={href}>{name}</a>
           </li>
