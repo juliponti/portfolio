@@ -19,6 +19,7 @@ export default function ExperienceCard({
     <motion.div
       transition={{ duration: 0.5 }}
       animate={{ rotateY: flip ? 0 : 180 }}
+      whileHover={{ scale: 1.05 }}
     >
       <motion.div
         transition={{ duration: 0.5 }}

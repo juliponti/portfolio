@@ -1,4 +1,5 @@
 import { Project } from "../../types";
+import { motion } from "framer-motion";
 
 const projects: Project[] = [
   {
@@ -25,7 +26,12 @@ export default function RecentWork() {
         <h3 className="lowercase text-2xl tracking-widest pb-10 ">
           My recent work
         </h3>
-        <div className="grid grid-cols-3 row-auto gap-3 pb-10">
+        <motion.div
+          className="grid grid-cols-3 row-auto gap-3 pb-10"
+          initial={{ opacity: 0, translateY: 100 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           {projects.map(({ name, link, src }) => (
             <div key={name} className="relative">
               <img
@@ -44,7 +50,7 @@ export default function RecentWork() {
               </a>
             </div>
           ))}
-        </div>
+        </motion.div>
         <a
           href="/projects"
           className="uppercase tracking-widest text-sm hover:text-primary-200"
