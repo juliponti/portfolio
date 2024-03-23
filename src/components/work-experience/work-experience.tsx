@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ExperienceCard from "./experince-card";
+import ExperienceCard from "./work-experience-card";
 import {
   backCard1,
   backCard2,
@@ -7,9 +7,9 @@ import {
   frontCard1,
   frontCard2,
   frontCard3,
-} from "./experience-data";
+} from "./work-experience-data";
 
-export default function Experience() {
+export default function WorkExperience() {
   const [flipCard1, setFlipCard1] = useState(true);
   const [flipCard2, setFlipCard2] = useState(true);
   const [flipCard3, setFlipCard3] = useState(true);
@@ -17,7 +17,7 @@ export default function Experience() {
   return (
     <section className="py-[120px]">
       <div className="wrapper">
-        <h3 className="text-center pb-10 lowercase">Experience</h3>
+        <h3 className="text-center pb-10 lowercase">Work Experience</h3>
         <div className="grid grid-cols-3 row-auto gap-5">
           <ExperienceCard
             flip={flipCard1}
