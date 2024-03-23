@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   return (
-    <header className="flex flex-wrap items-center justify-between overflow-x-hidden">
+    <header className="flex flex-wrap items-center justify-between max-w-[1900px] mx-auto overflow-x-hidden">
       <motion.div
         initial={{ opacity: 0, translateX: -100 }}
         animate={{ opacity: 1, translateX: 0 }}
@@ -24,7 +24,7 @@ export default function Header() {
         <h1 className="text-6xl relative -left-[33%] mb-4 normal-case">
           Julieta Pontino
         </h1>
-        <h2 className="uppercase font-light text-base leading-6 tracking-widest">
+        <h2 className="uppercase font-sans font-light text-base leading-6 tracking-widest">
           Front-end developer
         </h2>
       </motion.div>

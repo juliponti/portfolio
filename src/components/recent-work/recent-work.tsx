@@ -28,7 +28,7 @@ export default function RecentWork() {
         </h3>
         <motion.div
           className="grid grid-cols-3 row-auto gap-3 pb-10"
-          initial={{ opacity: 0, translateY: 100 }}
+          initial={{ opacity: 0, translateY: 50 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.5 }}
         >
