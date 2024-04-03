@@ -66,4 +66,16 @@
   .back {
     backface-visibility: hidden;
   }
+
+  .alert-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+  }
+
+  .alert-success {
+    background-color: #22bb33;
+    border-color: #22bb33;
+    color: #fff;
+  }
 }
