@@ -4,8 +4,8 @@ const navlinks = [
     href: "/",
   },
   {
-    name: "Work",
-    href: "/work",
+    name: "Projects",
+    href: "/projects",
   },
   {
     name: "About",

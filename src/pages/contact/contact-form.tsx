@@ -1,9 +1,10 @@
 import { FieldValues, useForm } from "react-hook-form";
-import Label from "./label";
-import Input from "./input";
+import Label from "../../components/ui/label";
+import Input from "../../components/ui/input";
 import { Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import Button from "../../components/ui/button";
 
 const registerOptions = {
   firstName: { required: "First name is required" },
@@ -122,10 +123,10 @@ export default function ContactForm() {
               </small>
             </div>
           </div>
-          <button
+          <Button
             disabled={isDisabled}
             type="submit"
-            className=" mt-5 mb-20 bg-[#F3F6F4] uppercase font-sans font-light text-sm tracking-wide py-2 px-4 rounded-md hover:bg-primary-200 hover:text-[#F3F6F4] transition-all flex gap-1 justify-center items-center"
+            className="mt-5 mb-20 bg-[#F3F6F4]"
           >
             {isDisabled ? (
               <>
@@ -135,7 +136,7 @@ export default function ContactForm() {
             ) : (
               "Send"
             )}
-          </button>
+          </Button>
         </div>
       </form>
       {alertInfo.display && (

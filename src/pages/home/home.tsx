@@ -4,7 +4,7 @@ import Footer from "../../components/footer/footer";
 import Header from "../../components/header";
 import MainQuote from "../../components/main-quote/main-quote";
 import Navbar from "../../components/navbar";
-import RecentWork from "../../components/recent-work/recent-work";
+import RecentWork from "../../components/recent-projects/recent-projects";
 
 export default function Home() {
   return (
