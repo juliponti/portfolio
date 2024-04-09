@@ -45,7 +45,7 @@ export default function ProjectLayout({
           <div className="mt-5 ml-[10%] flex gap-2">
             <a
               className="text-sm uppercase tracking-wide transition-all hover:text-primary-200"
-              target="_black"
+              target="_blank"
               href={liveLink}
             >
               View live
@@ -53,7 +53,7 @@ export default function ProjectLayout({
             {codeLink && (
               <a
                 className="text-sm uppercase tracking-wide transition-all hover:text-primary-200"
-                target="_black"
+                target="_blank"
                 href={codeLink}
               >
                 View code

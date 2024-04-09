@@ -23,6 +23,7 @@ function App() {
                   Exercise for{" "}
                   <a
                     href="https://twitter.com/courseitok"
+                    target="_blank"
                     className="font-semibold"
                   >
                     CourseIt
@@ -58,6 +59,7 @@ function App() {
                   Final project of the React course of{" "}
                   <a
                     href="https://twitter.com/courseitok"
+                    target="_blank"
                     className="font-semibold"
                   >
                     CourseIt
@@ -119,6 +121,7 @@ function App() {
                   This is a solution to the{" "}
                   <a
                     href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"
+                    target="_blank"
                     className="font-semibold"
                   >
                     Tip calculator app challenge on Frontend Mentor
@@ -178,6 +181,7 @@ function App() {
                   This is a solution to the{" "}
                   <a
                     href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3"
+                    target="_blank"
                     className="font-semibold"
                   >
                     Space tourism website challenge on Frontend Mentor
