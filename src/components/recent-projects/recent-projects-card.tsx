@@ -6,16 +6,19 @@ const recentProjects: Project[] = [
     name: "My little house",
     link: "/projects/my-little-house",
     src: "/src/assets/projects/1.png",
+    id: 1,
   },
   {
     name: "placeholder",
     link: "",
     src: "/src/assets/projects/2.png",
+    id: 2,
   },
   {
     name: "placeholder",
     link: "",
     src: "/src/assets/projects/3.png",
+    id: 3,
   },
 ];
 
@@ -27,12 +30,8 @@ export default function RecentWorkCards() {
       whileInView={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {recentProjects.map(({ name, link, src }) => (
-        <motion.div
-          key={name}
-          className="relative"
-          whileHover={{ scale: 0.94 }}
-        >
+      {recentProjects.map(({ name, link, src, id }) => (
+        <motion.div key={id} className="relative" whileHover={{ scale: 0.94 }}>
           <img
             src={src}
             alt="part of a pink sky with clouds"

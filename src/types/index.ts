@@ -3,4 +3,5 @@ export type Project = {
   link: string;
   src: string;
   className?: string | undefined;
+  id?: number;
 };

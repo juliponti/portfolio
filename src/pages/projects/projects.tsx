@@ -9,6 +9,7 @@ export default function Projects() {
   const [projectSelection, setProjectSelection] = useState({
     section: "recent",
   });
+
   return (
     <>
       <Navbar />
