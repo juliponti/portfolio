@@ -3,41 +3,47 @@ import { Project } from "../../types";
 
 const beginningsProjects: Project[] = [
   {
-    name: "Pokemon",
-    link: "/projects/pokemon",
+    name: "Pokedex",
+    link: "/projects/pokedex",
     src: "/src/assets/projects/beginnings/pokemon.png",
     className: "row-span-2 bg-[#E05454]",
   },
   {
-    name: "Splitter",
+    name: "Tip Calculator App",
     link: "/projects/splitter",
     src: "/src/assets/projects/beginnings/splitter.png",
-    className: "row-span-2 col-start-3 row-start-1 bg-[#C5E4E7]",
+    className: "row-span-3 bg-[#C5E4E7]",
   },
   {
     name: "Mercado Libre",
-    link: "/projects/meli",
+    link: "/projects/mercado-libre",
     src: "/src/assets/projects/beginnings/meli.png",
-    className: "row-span-2 col-start-1 row-start-3 bg-[#FB9F00]",
+    className: "row-span-2 bg-[#FB9F00]",
   },
   {
     name: "To do list",
     link: "/projects/to-do-list",
     src: "/src/assets/projects/beginnings/to-do.png",
-    className: "row-span-2 col-start-3 row-start-3 bg-[#EEDFE7]",
+    className: "row-span-3 row-start-3 bg-[#EEDFE7]",
   },
   {
     name: "Magic eight ball",
     link: "/projects/magic-eight-ball",
     src: "/src/assets/projects/beginnings/magic-ball.png",
-    className: "row-span-4 col-start-2 row-start-1 bg-[#7088AA]",
+    className: "row-span-2 col-start-2 row-start-4 bg-[#7088AA]",
+  },
+  {
+    name: "Space Tourism",
+    link: "/projects/space-tourism",
+    src: "/src/assets/projects/beginnings/space.png",
+    className: "row-span-3 col-start-3 row-start-3 bg-[#11203A]",
   },
 ];
 
 export default function BeginningsWorkCards() {
   return (
     <motion.div
-      className="grid grid-cols-3 grid-rows-4 gap-3 pb-10"
+      className="grid grid-cols-3 grid-rows-5 gap-3 pb-10"
       initial={{ opacity: 0, translateY: 50 }}
       whileInView={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.5 }}
