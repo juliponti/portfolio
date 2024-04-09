@@ -36,11 +36,11 @@ function App() {
               technologies="HTML | CSS | JavaScript "
               pcScreenshot={{
                 src: "/src/assets/projects/beginnings/screenshots/pokedex-screenshot.png",
-                alt: "web screenshot of a red pokedex customize by me",
+                alt: "web screenshot of a red pokedex customized by me",
               }}
               mobileScreenshot={{
                 src: "/src/assets/projects/beginnings/screenshots/pokedex-mobile.png",
-                alt: "mobile screenshot of a red pokedex customize by me",
+                alt: "mobile screenshot of a red pokedex customized by me",
               }}
               liveLink="https://juliponti.github.io/fetch-pokedex/"
               codeLink="https://github.com/juliponti/fetch-pokedex/blob/master/README.md"
@@ -70,11 +70,11 @@ function App() {
               technologies="React | SASS | API | React Router Dom"
               pcScreenshot={{
                 src: "/src/assets/projects/beginnings/screenshots/meli-screenshot.png",
-                alt: "web screenshot of a Mercado Libre webpage clon customize by me",
+                alt: "web screenshot of a Mercado Libre webpage clon customized by me",
               }}
               mobileScreenshot={{
                 src: "/src/assets/projects/beginnings/screenshots/meli-mobile.png",
-                alt: "mobile screenshot of a Mercado Libre webpage clon customize by me",
+                alt: "mobile screenshot of a Mercado Libre webpage clon customized by me",
               }}
               liveLink="https://juliponti.github.io/meli-react-app/"
               codeLink="https://github.com/juliponti/meli-react-app/tree/master"
@@ -97,11 +97,11 @@ function App() {
               technologies="React | Tailwind CSS | Responsive "
               pcScreenshot={{
                 src: "/src/assets/projects/beginnings/screenshots/magic-ball-screenshot.png",
-                alt: "web screenshot of a Magic Eight Ball webpage customize by me",
+                alt: "web screenshot of a Magic Eight Ball webpage customized by me",
               }}
               mobileScreenshot={{
                 src: "/src/assets/projects/beginnings/screenshots/magic-ball-mobile.png",
-                alt: " mobile screenshot of a Magic Eight Ball webpage customize by me",
+                alt: " mobile screenshot of a Magic Eight Ball webpage customized by me",
               }}
               liveLink="https://juliponti.github.io/magic-eight-ball-app/"
               codeLink="https://github.com/juliponti/magic-eight-ball-app"
@@ -161,7 +161,7 @@ function App() {
               }}
               mobileScreenshot={{
                 src: "/src/assets/projects/beginnings/screenshots/to-do-list-mobile.png",
-                alt: "mobile screenshot of a to-do list App customize by me",
+                alt: "mobile screenshot of a to-do list App customized by me",
               }}
               liveLink="https://juliponti.github.io/to-do-list/"
               codeLink="https://github.com/juliponti/to-do-list/tree/master"
