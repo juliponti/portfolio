@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { navlinksData } from "../navlinks";
 
-export default function HamburgerNavigation({ isOpen }: { isOpen: boolean }) {
+export default function HamburgerNavigation() {
   const variants = {
     open: {
       transition: { staggerChildren: 0.07, delayChildren: 0.2 },
@@ -29,7 +29,7 @@ export default function HamburgerNavigation({ isOpen }: { isOpen: boolean }) {
   };
 
   return (
-    <div className={isOpen ? "flex justify-center h-full mt-28" : "hidden"}>
+    <div className="flex justify-center h-full mt-28">
       <motion.ul variants={variants} className="relative flex flex-col gap-5">
         {navlinksData.map(({ name, href }) => (
           <motion.li

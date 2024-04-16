@@ -21,7 +21,7 @@ export default function HamburgerMenu() {
     closed: {
       clipPath: "circle(0px at 600px 40px)",
       transition: {
-        delay: 0.5,
+        delay: 0.7,
         type: "tween",
         stiffness: 400,
         damping: 40,
@@ -38,14 +38,14 @@ export default function HamburgerMenu() {
       className={
         isOpen
           ? "absolute top-0 right-0 w-full h-full z-20 "
-          : "absolute top-0 right-0 w-full h-full z-0"
+          : "absolute top-0 right-0 w-full h-full z-0 transition-[z-index] delay-[1s]"
       }
     >
       <motion.div
         className="absolute top-0 right-0 h-full w-full bg-primary-100"
         variants={sidebar}
       />
-      <HamburgerNavigation isOpen={isOpen} />
+      <HamburgerNavigation />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );
