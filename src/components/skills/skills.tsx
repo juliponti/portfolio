@@ -29,9 +29,9 @@ export default function Skills() {
       >
         <div className="wrapper">
           <h2 className="font-serif mb-7 text-4xl lowercase">My skills</h2>
-          <ul className="grid grid-cols-4 gap-2">
+          <ul className="grid grid-cols-2 lg:grid-cols-4 gap-2">
             {mySkills.map((skill) => (
-              <li key={skill} className="mb-5 text-base ">
+              <li key={skill} className="mb-5 text-2xl sm:text-base ">
                 {skill}
               </li>
             ))}

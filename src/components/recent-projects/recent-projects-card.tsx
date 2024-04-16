@@ -25,7 +25,7 @@ const recentProjects: Project[] = [
 export default function RecentWorkCards() {
   return (
     <motion.div
-      className="grid grid-cols-3 row-auto gap-3 pb-10"
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 row-auto gap-3 pb-10"
       initial={{ opacity: 0, translateY: 50 }}
       whileInView={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.5 }}
@@ -40,7 +40,7 @@ export default function RecentWorkCards() {
 
           <a
             href={link}
-            className="h-full w-full flex justify-center absolute top-0 left-0 items-center bg-primary-300 text-white opacity-0 rounded-2xl hover:opacity-90 transition-all"
+            className="h-full opacity-90 w-full flex justify-center absolute top-0 left-0 items-center bg-primary-300 text-white md:opacity-0 rounded-2xl hover:opacity-90 transition-all"
             rel="noreferrer"
           >
             <h3 className="lowercase text-2xl ">{name}</h3>

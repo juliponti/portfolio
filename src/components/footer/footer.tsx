@@ -4,9 +4,9 @@ import FooterNavbar from "./footer-navbar";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-300 text-[#f3f6f4] pt-10 pb-5">
+    <footer className="w-full bg-primary-300 text-[#f3f6f4] pt-10 pb-5">
       <div className="wrapper">
-        <div className="flex flex-wrap justify-between items-center">
+        <div className="flex flex-wrap flex-col justify-between md:flex-row  md:items-center">
           <div>
             <Logo />
           </div>
