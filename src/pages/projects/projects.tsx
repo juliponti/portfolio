@@ -11,14 +11,14 @@ export default function Projects() {
   });
 
   return (
-    <>
+    <div className="flex flex-col h-screen justify-between">
       <Navbar />
-      <header className="pt-10 pb-14">
+      <header className="pt-10 pb-14 relative z-10">
         <div className="wrapper">
           <h1 className="text-6xl lowercase pb-10">Projects</h1>
           <nav>
-            <ul className="flex flex-wrap">
-              <li className=" mr-5">
+            <ul className="flex flex-wrap gap-2">
+              <li>
                 <Button
                   className={
                     projectSelection.section === "recent"
@@ -32,7 +32,7 @@ export default function Projects() {
                   recent
                 </Button>
               </li>
-              <li className=" mr-5">
+              <li>
                 <Button
                   className={
                     projectSelection.section === "beginnings"
@@ -50,7 +50,7 @@ export default function Projects() {
           </nav>
         </div>
       </header>
-      <main>
+      <main className="relative z-10">
         <section>
           <div className="wrapper">
             {projectSelection.section === "recent" ? (
@@ -61,7 +61,8 @@ export default function Projects() {
           </div>
         </section>
       </main>
+
       <Footer />
-    </>
+    </div>
   );
 }

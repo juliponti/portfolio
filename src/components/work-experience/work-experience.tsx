@@ -16,9 +16,9 @@ export default function WorkExperience() {
 
   return (
     <section className="py-[120px]">
-      <div className="wrapper">
+      <div className="max-w-[1200px] w-full mx-auto sm:w-4/5 ">
         <h3 className="text-center pb-10 lowercase">Work Experience</h3>
-        <div className="grid grid-cols-3 row-auto gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 row-auto gap-5">
           <ExperienceCard
             flip={flipCard1}
             onFlip={setFlipCard1}

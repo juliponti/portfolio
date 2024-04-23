@@ -68,12 +68,12 @@ export default function ContactForm() {
     <>
       <form
         onSubmit={handleSubmit(handleSendForm)}
-        className="w-[850px] mx-auto"
+        className="w-full md:max-w-[850px] mx-auto"
       >
-        <div className="wrapper  flex flex-col items-center">
+        <div className="wrapper flex flex-col items-center">
           <div className="block w-full">
-            <div className="flex gap-5">
-              <div className="w-2/4">
+            <div className="flex flex-col gap-5 md:flex-row">
+              <div className="w-full md:w-2/4">
                 <Label>First name</Label>
                 <Input
                   type="text"
@@ -83,7 +83,7 @@ export default function ContactForm() {
                   errors={form.formState.errors}
                 />
               </div>
-              <div className="w-2/4">
+              <div className="w-full md:w-2/4">
                 <Label>Last name</Label>
                 <Input
                   type="text"

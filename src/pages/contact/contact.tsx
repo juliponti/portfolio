@@ -4,9 +4,9 @@ import ContactForm from "./contact-form";
 
 export default function Contact() {
   return (
-    <>
+    <div className="flex flex-col items-center justify-between h-screen">
       <Navbar />
-      <header className="pt-20 pb-14 mx-auto w-[850px]">
+      <header className="relative z-10 pt-20 pb-14 mx-auto w-[94%] md:max-w-[840px]">
         <div className="wrapper">
           <h1 className="text-6xl lowercase mb-7 text-center">Let's connect</h1>
           <p className="text-sm">
@@ -19,10 +19,10 @@ export default function Contact() {
           </p>
         </div>
       </header>
-      <main>
+      <main className="w-full relative z-10">
         <ContactForm />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

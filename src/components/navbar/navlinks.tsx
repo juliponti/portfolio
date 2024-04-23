@@ -1,4 +1,4 @@
-const navlinks = [
+export const navlinksData = [
   {
     name: "Home",
     href: "/",
@@ -17,14 +17,16 @@ const navlinks = [
   },
 ];
 
-export default function Navlinks() {
+export function Navlinks({ className }: { className?: string }) {
   return (
     <div>
-      <ul className="flex flex-wrap items-center">
-        {navlinks.map(({ name, href }) => (
+      <ul
+        className={`flex flex-wrap gap-6 mt-5 mb-8 md:mt-0 md:mb-0 md:gap-0 md:items-center md:flex-row ${className}`}
+      >
+        {navlinksData.map(({ name, href }) => (
           <li
             key={name}
-            className="uppercase tracking-[0.110rem]  ml-7 text-xs hover:text-primary-200"
+            className="uppercase tracking-[0.110rem]  md:ml-7 text-xs hover:text-primary-200"
           >
             <a href={href}>{name}</a>
           </li>

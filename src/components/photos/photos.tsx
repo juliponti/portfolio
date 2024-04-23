@@ -1,26 +1,45 @@
+import useWindowDimensions from "../../hooks/use-window-dimensions";
+
 const myPhotos = [
   {
-    src: "/src/assets/about/galery/viewpoint.jpg",
-    alt: "Viewpoint at Playa del Carmen, City of México",
+    src: {
+      large: "/src/assets/about/galery/left-green.png",
+      md: "/src/assets/about/galery/md/up.png",
+      sm: "/src/assets/about/galery/left-green.png",
+    },
+    alt: "beige background with phrase",
   },
   {
-    src: "/src/assets/about/galery/palmtrees.jpg",
-    alt: "Palms trees looked from down at Playa del Carmen, City of Mexico",
+    src: {
+      large: "/src/assets/about/galery/middle-green.png",
+      md: "/src/assets/about/galery/md/middle.png",
+      sm: "/src/assets/about/galery/sm/middle.png",
+    },
+    alt: "Beige to blue gradient with silhouettes",
   },
   {
-    src: "/src/assets/about/galery/turtles.jpg",
-    alt: "Sea turtles in a tank in XCARET theme park in Playa del Carmen, City of Mexico",
+    src: {
+      large: "/src/assets/about/galery/right-green.png",
+      md: "/src/assets/about/galery/md/down.png",
+      sm: "/src/assets/about/galery/right-green.png",
+    },
+    alt: "blue background with phrase",
   },
 ];
 
 export default function Photos() {
+  const { width } = useWindowDimensions();
   return (
-    <section className="pb-14 ">
+    <section className="pb-14">
       <div className="wrapper">
-        <ul className="grid grid-cols-[1.3fr_2.3fr_1.3fr] gap-5">
+        <ul className="grid grid-cols-1 place-items-center  lg:grid-cols-[0.9fr_3fr_0.9fr] gap-1">
           {myPhotos.map(({ src, alt }) => (
             <li>
-              <img className="max-w-full h-auto block" src={src} alt={alt} />
+              <img
+                className="max-w-full h-auto block"
+                src={width <= 423 ? src.sm : width < 1024 ? src.md : src.large}
+                alt={alt}
+              />
             </li>
           ))}
         </ul>
