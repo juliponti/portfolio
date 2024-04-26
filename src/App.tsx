@@ -219,9 +219,6 @@ function App() {
                   Little House". Some functionalities include adding courses and
                   students, charging invoices, seeing statistics, controlling
                   the incomes, the outcomes, etc.{" "}
-                  <p>
-                    It's in Spanish as it was meant for a spanish speaker user.
-                  </p>
                 </>
               }
               technologies="Next JS | Prisma | Shadcn UI"
@@ -229,7 +226,7 @@ function App() {
                 src: "/src/assets/projects/MLH-screenshot.png",
                 alt: "web screenshot of an app customize by me",
               }}
-              liveLink=""
+              liveLink="https://my-little-house-demo-git-engl-b5826a-julietas-projects-dee94194.vercel.app/students"
             />
           }
         />

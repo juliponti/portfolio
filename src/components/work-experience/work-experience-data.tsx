@@ -6,7 +6,7 @@ const altimetrikImg = (
   <img
     src="/src/assets/experience/altimetrik_logo.png"
     alt="Altimetrik Logo"
-    className="w-28"
+    className="w-28 h-28"
   />
 );
 
@@ -14,7 +14,7 @@ const fundingCircleImg = (
   <img
     src="/src/assets/experience/funding_circle_logo.png"
     alt="Funding Circle Logo"
-    className="w-40"
+    className="w-40 h-40"
   />
 );
 
@@ -22,7 +22,7 @@ const westernImg = (
   <img
     src="/src/assets/experience/western_digital_logo.png"
     alt="Western Digital Logo"
-    className="w-52 "
+    className="w-52 h-52"
   />
 );
 
