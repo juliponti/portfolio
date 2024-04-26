@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import headerImage from "/src/assets/new-home-header.jpg";
 
 export default function Header() {
   return (
@@ -10,8 +11,8 @@ export default function Header() {
         className="w-4/5 sm:w-4/5 md:w-3/6 h-full"
       >
         <img
-          className="max-w-full h-auto border-none block"
-          src="/src/assets/home-header.jpg"
+          className="max-w-full h-auto w-full border-none block"
+          src={headerImage}
           alt="Delicate, green leaves from a plant against a pale green wall"
         />
       </motion.div>

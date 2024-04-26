@@ -35,7 +35,7 @@ export default function RecentWorkCards() {
           <img
             src={src}
             alt="part of a pink sky with clouds"
-            className="rounded-2xl w-full "
+            className="rounded-2xl w-full h-full"
           />
 
           <a
