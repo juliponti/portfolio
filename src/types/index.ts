@@ -1,7 +1,8 @@
 export type Project = {
   name: string;
-  link: string;
+  path: string;
   src: string;
+  alt: string;
   className?: string | undefined;
   id?: number;
 };

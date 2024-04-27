@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import CV from "../../assets/about/PONTINO-JULIETA-CV.pdf";
+import me from "/src/assets/about/me.png";
 
 export function AboutHeader() {
   return (
@@ -12,7 +13,7 @@ export function AboutHeader() {
       >
         <img
           className="max-w-full h-auto border-none block"
-          src="/src/assets/about/me.png"
+          src={me}
           alt="Portrait of myself"
         />
       </motion.div>

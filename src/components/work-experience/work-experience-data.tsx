@@ -1,35 +1,16 @@
 import { RxDotFilled } from "react-icons/rx";
 import FrontCardLayout from "./card-layout/front-card-layout";
 import BackCardLayout from "./card-layout/back-card-layout";
-
-const altimetrikImg = (
-  <img
-    src="/src/assets/experience/altimetrik_logo.png"
-    alt="Altimetrik Logo"
-    className="w-28 h-28"
-  />
-);
-
-const fundingCircleImg = (
-  <img
-    src="/src/assets/experience/funding_circle_logo.png"
-    alt="Funding Circle Logo"
-    className="w-40 h-40"
-  />
-);
-
-const westernImg = (
-  <img
-    src="/src/assets/experience/western_digital_logo.png"
-    alt="Western Digital Logo"
-    className="w-52 h-52"
-  />
-);
+import altimetrikImg from "/src/assets/experience/altimetrik_logo.png";
+import fundingCircleImg from "/src/assets/experience/funding_circle_logo.png";
+import westernImg from "/src/assets/experience/western_digital_logo.png";
 
 export const frontCard1 = (
   <FrontCardLayout
     imgHref="https://www.altimetrik.com/"
-    img={altimetrikImg}
+    img={
+      <img src={altimetrikImg} alt="Altimetrik Logo" className="w-28 h-28" />
+    }
     title="Altimetrik"
   >
     <div className="flex">
@@ -81,7 +62,13 @@ export const backCard1 = (
 export const frontCard2 = (
   <FrontCardLayout
     imgHref="https://www.fundingcircle.com/uk/"
-    img={fundingCircleImg}
+    img={
+      <img
+        src={fundingCircleImg}
+        alt="Funding Circle Logo"
+        className="w-40 h-40"
+      />
+    }
     title="Funding Circle"
     tooltip="Altimetrik's client"
   >
@@ -152,7 +139,9 @@ export const backCard2 = (
 export const frontCard3 = (
   <FrontCardLayout
     imgHref="https://www.westerndigital.com/"
-    img={westernImg}
+    img={
+      <img src={westernImg} alt="Western Digital Logo" className="w-52 h-52" />
+    }
     title="Western Digital"
     tooltip="Altimetrik's client"
   >

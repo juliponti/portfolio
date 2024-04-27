@@ -5,6 +5,20 @@ import Contact from "./pages/contact";
 import Projects from "./pages/projects";
 import ProjectLayout from "./pages/projects/project-layout";
 
+import POKEDEX_PC from "/src/assets/projects/beginnings/screenshots/pokedex-screenshot.png";
+import POKEDEX_MOBILE from "/src/assets/projects/beginnings/screenshots/pokedex-mobile.png";
+import MELI_PC from "/src/assets/projects/beginnings/screenshots/meli-screenshot.png";
+import MELI_MOBILE from "/src/assets/projects/beginnings/screenshots/meli-mobile.png";
+import MAGIC_BALL_PC from "/src/assets/projects/beginnings/screenshots/magic-ball-screenshot.png";
+import MAGIC_BALL_MOBILE from "/src/assets/projects/beginnings/screenshots/magic-ball-mobile.png";
+import SPLITTER_PC from "/src/assets/projects/beginnings/screenshots/splitter-screenshot.png";
+import SPLITTER_MOBILE from "/src/assets/projects/beginnings/screenshots/splitter-mobile.png";
+import TO_DO_LIST_PC from "/src/assets/projects/beginnings/screenshots/to-do-list-screenshot.png";
+import TO_DO_LIST_MOBILE from "/src/assets/projects/beginnings/screenshots/to-do-list-mobile.png";
+import SPACE_PC from "/src/assets/projects/beginnings/screenshots/space-screenshot.png";
+import SPACE_MOBILE from "/src/assets/projects/beginnings/screenshots/space-mobile.png";
+import MLH_PC from "/src/assets/projects/MLH-screenshot.png";
+
 function App() {
   return (
     <BrowserRouter>
@@ -36,11 +50,11 @@ function App() {
               }
               technologies="HTML | CSS | JavaScript "
               pcScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/pokedex-screenshot.png",
+                src: POKEDEX_PC,
                 alt: "web screenshot of a red pokedex customized by me",
               }}
               mobileScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/pokedex-mobile.png",
+                src: POKEDEX_MOBILE,
                 alt: "mobile screenshot of a red pokedex customized by me",
               }}
               liveLink="https://juliponti.github.io/fetch-pokedex/"
@@ -71,11 +85,11 @@ function App() {
               }
               technologies="React | SASS | API | React Router Dom"
               pcScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/meli-screenshot.png",
+                src: MELI_PC,
                 alt: "web screenshot of a Mercado Libre webpage clon customized by me",
               }}
               mobileScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/meli-mobile.png",
+                src: MELI_MOBILE,
                 alt: "mobile screenshot of a Mercado Libre webpage clon customized by me",
               }}
               liveLink="https://juliponti.github.io/meli-react-app/"
@@ -98,11 +112,11 @@ function App() {
               }
               technologies="React | Tailwind CSS | Responsive "
               pcScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/magic-ball-screenshot.png",
+                src: MAGIC_BALL_PC,
                 alt: "web screenshot of a Magic Eight Ball webpage customized by me",
               }}
               mobileScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/magic-ball-mobile.png",
+                src: MAGIC_BALL_MOBILE,
                 alt: " mobile screenshot of a Magic Eight Ball webpage customized by me",
               }}
               liveLink="https://juliponti.github.io/magic-eight-ball-app/"
@@ -134,11 +148,11 @@ function App() {
               }
               technologies="HTML5 | SASS | JavaScript"
               pcScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/splitter-screenshot.png",
+                src: SPLITTER_PC,
                 alt: "web screenshot of a Tip Calculator App",
               }}
               mobileScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/splitter-mobile.png",
+                src: SPLITTER_MOBILE,
                 alt: "mobile screenshot of a Tip Calculator App",
               }}
               liveLink="https://juliponti.github.io/tip-calculator-app/"
@@ -159,11 +173,11 @@ function App() {
               }
               technologies="React | Sass | Context"
               pcScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/to-do-list-screenshot.png",
+                src: TO_DO_LIST_PC,
                 alt: "web screenshot of a to-do list App customize by me",
               }}
               mobileScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/to-do-list-mobile.png",
+                src: TO_DO_LIST_MOBILE,
                 alt: "mobile screenshot of a to-do list App customized by me",
               }}
               liveLink="https://juliponti.github.io/to-do-list/"
@@ -195,11 +209,11 @@ function App() {
               }
               technologies="React | Tailwind CSS | Responsive"
               pcScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/space-screenshot.png",
+                src: SPACE_PC,
                 alt: "web screenshot of a Space Tourism app",
               }}
               mobileScreenshot={{
-                src: "/src/assets/projects/beginnings/screenshots/space-mobile.png",
+                src: SPACE_MOBILE,
                 alt: "mobile screenshot of Space Tourism app",
               }}
               liveLink="https://juliponti.github.io/space-tourism-website/"
@@ -223,7 +237,7 @@ function App() {
               }
               technologies="Next JS | Prisma | Shadcn UI"
               pcScreenshot={{
-                src: "/src/assets/projects/MLH-screenshot.png",
+                src: MLH_PC,
                 alt: "web screenshot of an app customize by me",
               }}
               liveLink="https://my-little-house-demo-git-engl-b5826a-julietas-projects-dee94194.vercel.app/students"

@@ -1,23 +1,29 @@
 import { motion } from "framer-motion";
 import { Project } from "../../types";
+import MLH_IMG from "/src/assets/projects/1.png";
+import PLACEHOLDER_1 from "/src/assets/projects/2.png";
+import PLACEHOLDER_2 from "/src/assets/projects/3.png";
 
 const recentProjects: Project[] = [
   {
     name: "My little house",
-    link: "/projects/my-little-house",
-    src: "/src/assets/projects/1.png",
+    path: "/projects/my-little-house",
+    src: MLH_IMG,
+    alt: "A minimalistic house made of black lines with flowers",
     id: 1,
   },
   {
     name: "placeholder",
-    link: "",
-    src: "/src/assets/projects/2.png",
+    path: "",
+    src: PLACEHOLDER_1,
+    alt: "coming soon",
     id: 2,
   },
   {
     name: "placeholder",
-    link: "",
-    src: "/src/assets/projects/3.png",
+    path: "",
+    src: PLACEHOLDER_2,
+    alt: "coming soon",
     id: 3,
   },
 ];
@@ -30,16 +36,12 @@ export default function RecentWorkCards() {
       whileInView={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {recentProjects.map(({ name, link, src, id }) => (
+      {recentProjects.map(({ name, path, src, id, alt }) => (
         <motion.div key={id} className="relative" whileHover={{ scale: 0.94 }}>
-          <img
-            src={src}
-            alt="part of a pink sky with clouds"
-            className="rounded-2xl w-full h-full"
-          />
+          <img src={src} alt={alt} className="rounded-2xl w-full " />
 
           <a
-            href={link}
+            href={path}
             className="h-full opacity-90 w-full flex justify-center absolute top-0 left-0 items-center bg-primary-300 text-white md:opacity-0 rounded-2xl hover:opacity-90 transition-all"
             rel="noreferrer"
           >

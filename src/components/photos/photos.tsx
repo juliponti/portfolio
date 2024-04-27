@@ -1,27 +1,33 @@
 import useWindowDimensions from "../../hooks/use-window-dimensions";
+import IMG_LEFT_1_MD from "/src/assets/about/galery/md/up.png";
+import IMG_LEFT_1_SM from "/src/assets/about/galery/left-green.png";
+import IMG_LEFT_2_MD from "/src/assets/about/galery/md/middle.png";
+import IMG_LEFT_2_SM from "/src/assets/about/galery/sm/middle.png";
+import IMG_LEFT_3_MD from "/src/assets/about/galery/md/down.png";
+import IMG_LEFT_3_SM from "/src/assets/about/galery/right-green.png";
 
 const myPhotos = [
   {
     src: {
       large: "/src/assets/about/galery/left-green.png",
-      md: "/src/assets/about/galery/md/up.png",
-      sm: "/src/assets/about/galery/left-green.png",
+      md: IMG_LEFT_1_MD,
+      sm: IMG_LEFT_1_SM,
     },
     alt: "beige background with phrase",
   },
   {
     src: {
       large: "/src/assets/about/galery/middle-green.png",
-      md: "/src/assets/about/galery/md/middle.png",
-      sm: "/src/assets/about/galery/sm/middle.png",
+      md: IMG_LEFT_2_MD,
+      sm: IMG_LEFT_2_SM,
     },
     alt: "Beige to blue gradient with silhouettes",
   },
   {
     src: {
       large: "/src/assets/about/galery/right-green.png",
-      md: "/src/assets/about/galery/md/down.png",
-      sm: "/src/assets/about/galery/right-green.png",
+      md: IMG_LEFT_3_MD,
+      sm: IMG_LEFT_3_SM,
     },
     alt: "blue background with phrase",
   },
