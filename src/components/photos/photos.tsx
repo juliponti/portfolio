@@ -1,5 +1,4 @@
 import useWindowDimensions from "../../hooks/use-window-dimensions";
-import IMG_LEFT_1_MD from "/src/assets/about/galery/md/up.png";
 import IMG_LEFT_1_SM from "/src/assets/about/galery/left-green.png";
 import IMG_LEFT_2_MD from "/src/assets/about/galery/md/middle.png";
 import IMG_LEFT_2_SM from "/src/assets/about/galery/sm/middle.png";
@@ -10,7 +9,7 @@ const myPhotos = [
   {
     src: {
       large: "/src/assets/about/galery/left-green.png",
-      md: IMG_LEFT_1_MD,
+      md: "/src/assets/about/galery/md/up.png",
       sm: IMG_LEFT_1_SM,
     },
     alt: "beige background with phrase",
