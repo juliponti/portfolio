@@ -1,34 +1,40 @@
 import useWindowDimensions from "../../hooks/use-window-dimensions";
-import IMG_LEFT_1_SM from "/src/assets/about/galery/left-green.png";
-import IMG_LEFT_2_MD from "/src/assets/about/galery/md/middle.png";
-import IMG_LEFT_2_SM from "/src/assets/about/galery/sm/middle.png";
-import IMG_LEFT_3_MD from "/src/assets/about/galery/md/down.png";
-import IMG_LEFT_3_SM from "/src/assets/about/galery/right-green.png";
+import IMG_01_SM from "/src/assets/about/galery/left-green.png";
+import IMG_01_MD from "/src/assets/about/galery/md/up.png";
+import IMG_01_XL from "/src/assets/about/galery/left-green.png";
+
+import IMG_02_SM from "/src/assets/about/galery/sm/middle.png";
+import IMG_02_MD from "/src/assets/about/galery/md/middle.png";
+import IMG_02_XL from "/src/assets/about/galery/middle-green.png";
+
+import IMG_03_SM from "/src/assets/about/galery/right-green.png";
+import IMG_03_MD from "/src/assets/about/galery/md/down.png";
+import IMG_03_XL from "/src/assets/about/galery/right-green.png";
 
 const myPhotos = [
   {
     src: {
-      large: "/src/assets/about/galery/left-green.png",
-      md: "/src/assets/about/galery/md/up.png",
-      sm: IMG_LEFT_1_SM,
+      large: IMG_01_SM,
+      md: IMG_01_MD,
+      sm: IMG_01_XL,
     },
     alt: "beige background with phrase",
   },
   {
     src: {
-      large: "/src/assets/about/galery/middle-green.png",
-      md: IMG_LEFT_2_MD,
-      sm: IMG_LEFT_2_SM,
+      large: IMG_02_XL,
+      md: IMG_02_MD,
+      sm: IMG_02_SM,
     },
-    alt: "Beige to blue gradient with silhouettes",
+    alt: "Beige to green gradient with silhouettes",
   },
   {
     src: {
-      large: "/src/assets/about/galery/right-green.png",
-      md: IMG_LEFT_3_MD,
-      sm: IMG_LEFT_3_SM,
+      large: IMG_03_XL,
+      md: IMG_03_MD,
+      sm: IMG_03_SM,
     },
-    alt: "blue background with phrase",
+    alt: "green background with phrase",
   },
 ];
 
