@@ -7,7 +7,7 @@ export default function Header() {
       <motion.div
         initial={{ opacity: 0, translateX: -100 }}
         animate={{ opacity: 1, translateX: 0 }}
-        transition={{ duration: 1.3 }}
+        transition={{ duration: 1 }}
         className="w-4/5 sm:w-4/5 md:w-3/6 h-full"
       >
         <img
@@ -19,7 +19,7 @@ export default function Header() {
       <motion.div
         initial={{ opacity: 0, translateX: 100 }}
         animate={{ opacity: 1, translateX: 0 }}
-        transition={{ duration: 1.3 }}
+        transition={{ duration: 1 }}
         className="w-4/5 mt-20 mb-7 mx-auto md:m-0 md:w-2/5 lg:m-0"
       >
         <h1 className="static text-5xl md:text-4xl md:relative lg:relative lg:text-6xl  -left-[33%] mb-4 normal-case">

@@ -8,7 +8,7 @@ export function AboutHeader() {
       <motion.div
         initial={{ opacity: 0, translateX: -100 }}
         animate={{ opacity: 1, translateX: 0 }}
-        transition={{ duration: 1.3 }}
+        transition={{ duration: 1 }}
         className="w-full sm:w-[55%] lg:w-3/6 h-full self-start"
       >
         <img
@@ -20,7 +20,7 @@ export function AboutHeader() {
       <motion.div
         initial={{ opacity: 0, translateX: 100 }}
         animate={{ opacity: 1, translateX: 0 }}
-        transition={{ duration: 1.3 }}
+        transition={{ duration: 1 }}
         className="md:w-4/5 mt-28 md:ml-[5%] lg:mt-0 lg:w-2/5"
       >
         <h1 className="text-4xl pb-10 md:pb-0 ml-5 lg:ml-0 lg:text-5xl xl:text-6xl lg:relative lg:-left-[63px] xl:-left-[100px] mb-4 normal-case">
