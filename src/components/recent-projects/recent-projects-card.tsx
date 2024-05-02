@@ -42,7 +42,7 @@ export default function RecentWorkCards() {
 
           <a
             href={path}
-            className="h-full opacity-90 w-full flex justify-center absolute top-0 left-0 items-center bg-primary-300 text-white md:opacity-0 rounded-2xl hover:opacity-90 transition-all"
+            className="h-full  w-full flex justify-center absolute top-0 left-0 items-center bg-primary-300 text-white opacity-0 rounded-2xl hover:opacity-90 transition-all"
             rel="noreferrer"
           >
             <h3 className="lowercase text-2xl ">{name}</h3>

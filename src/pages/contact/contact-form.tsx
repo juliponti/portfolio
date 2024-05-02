@@ -74,8 +74,9 @@ export default function ContactForm() {
           <div className="block w-full">
             <div className="flex flex-col gap-5 md:flex-row">
               <div className="w-full md:w-2/4">
-                <Label>First name</Label>
+                <Label htmlFor="firstName">First name</Label>
                 <Input
+                  id="firstName"
                   type="text"
                   name="firstName"
                   register={register}
@@ -84,8 +85,9 @@ export default function ContactForm() {
                 />
               </div>
               <div className="w-full md:w-2/4">
-                <Label>Last name</Label>
+                <Label htmlFor="lastName">Last name</Label>
                 <Input
+                  id="lastName"
                   type="text"
                   name="lastName"
                   register={register}
@@ -94,16 +96,18 @@ export default function ContactForm() {
                 />
               </div>
             </div>
-            <Label>Email</Label>
+            <Label htmlFor="email">Email</Label>
             <Input
+              id="email"
               type="email"
               name="email"
               register={register}
               registerOption={registerOptions.email}
               errors={form.formState.errors}
             />
-            <Label>Subject</Label>
+            <Label htmlFor="subject">Subject</Label>
             <Input
+              id="subject"
               type="text"
               name="subject"
               register={register}
@@ -113,6 +117,7 @@ export default function ContactForm() {
             <Label htmlFor="message">Message</Label>
             <div className="mb-5">
               <textarea
+                id="message"
                 className="w-full border border-[#2C2C2C] p-2 overflow-auto resize-none h-52  font-sans text-sm font-normal focus-visible:outline-primary-200"
                 {...register("message", registerOptions.message)}
                 name="message"

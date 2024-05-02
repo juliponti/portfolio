@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
 import CV from "../../assets/about/PONTINO-JULIETA-CV.pdf";
 import me from "/src/assets/about/me.png";
+import useImagePreloader from "../../hooks/use-image-preloader";
+
+const preloadSrcList = [me];
 
 export function AboutHeader() {
+  useImagePreloader(preloadSrcList);
+
   return (
     <header className="relative z-10 flex flex-wrap flex-col items-center justify-between max-w-[1900px] mx-auto overflow-x-hidden lg:flex-row ">
       <motion.div
@@ -40,14 +45,16 @@ export function AboutHeader() {
             get in touch here!
           </a>
         </p>
-        <p className="text-2xl px-5 sm:ml-[10%] mb-2 md:text-sm lg:mb-0 lg:ml-0 lg:relative lg:-left-[32px] max-w-[676px] flex flex-col md:flex-row gap-1 mt-2">
-          Or check out my CV
+        <div className="flex gap-1 items-center px-5 sm:ml-[10%] lg:relative lg:-left-[13px] lg:ml-0 lg:p-0">
+          <p className="text-2xl max-w-[676px] mt-0 md:text-sm md:mt-2">
+            Or check out my CV
+          </p>
           <form method="get" action={CV} target="_blank" rel="noreferrer">
-            <button className="text-primary-300 hover:text-primary-200">
+            <button className="text-primary-300 text-2xl hover:text-primary-200 md:text-sm ">
               here
             </button>
           </form>
-        </p>
+        </div>
       </motion.div>
     </header>
   );

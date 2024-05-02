@@ -30,7 +30,7 @@ export default function ProjectLayout({
   return (
     <div className="flex flex-col items-center justify-between h-screen">
       <Navbar />
-      <header className="relative z-10 flex flex-col items-center justify-between max-w-[1900px] mx-auto lg:flex-row lg:ml-auto lg:mr-0 xl:mx-auto">
+      <header className="relative z-10 flex flex-col items-center justify-between w-full max-w-[1900px] mx-auto lg:flex-row lg:ml-auto lg:mr-0 xl:mx-auto">
         <motion.div
           initial={{ opacity: 0, translateX: 100 }}
           animate={{ opacity: 1, translateX: 0 }}
@@ -64,7 +64,7 @@ export default function ProjectLayout({
         <motion.div
           initial={{ opacity: 0, translateX: -100 }}
           animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 1 }}
           className="w-4/5 lg:w-[45%] h-full"
         >
           <img
@@ -82,7 +82,7 @@ export default function ProjectLayout({
                 <motion.div
                   initial={{ opacity: 0, translateX: 100 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 1.3 }}
+                  transition={{ duration: 1 }}
                 >
                   <img
                     src={mobileScreenshot?.src}

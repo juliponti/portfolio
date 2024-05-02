@@ -18,8 +18,27 @@ import TO_DO_LIST_MOBILE from "/src/assets/projects/beginnings/screenshots/to-do
 import SPACE_PC from "/src/assets/projects/beginnings/screenshots/space-screenshot.png";
 import SPACE_MOBILE from "/src/assets/projects/beginnings/screenshots/space-mobile.png";
 import MLH_PC from "/src/assets/projects/MLH-screenshot.png";
+import useImagePreloader from "./hooks/use-image-preloader";
+
+const preloadSrcList = [
+  POKEDEX_PC,
+  POKEDEX_MOBILE,
+  MELI_PC,
+  MELI_MOBILE,
+  MAGIC_BALL_PC,
+  MAGIC_BALL_MOBILE,
+  SPLITTER_PC,
+  SPLITTER_MOBILE,
+  TO_DO_LIST_PC,
+  TO_DO_LIST_MOBILE,
+  SPACE_PC,
+  SPACE_MOBILE,
+  MLH_PC,
+];
 
 function App() {
+  useImagePreloader(preloadSrcList);
+
   return (
     <BrowserRouter>
       <Routes>
