@@ -25,7 +25,7 @@ export const frontCard1 = (
           <div className=" ml-5">
             <p className="font-semibold">Frontend developer</p>
             <p className="text-sm">full time</p>
-            <p className="text-sm">Dec 2022 - Jua 2024</p>
+            <p className="text-sm">Dec 2022 - Jan 2024</p>
           </div>
         </li>
         <li className="font-sans pb-4 text-[#686868] text-base flex gap-2">
@@ -77,7 +77,7 @@ export const frontCard2 = (
         <div className="ml-5">
           <p className="font-semibold">Frontend developer</p>
           <p className="text-sm">temporary contract</p>
-          <p className="text-sm">Jun 2023 - Jua 2024</p>
+          <p className="text-sm">Jun 2023 - Jan 2024</p>
         </div>
       </li>
       <li>
