@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import headerImage from "/src/assets/new-home-header.jpg";
+import useImagePreloader from "../../hooks/use-image-preloader";
+const preloadSrcList = [headerImage];
 
 export default function Header() {
+  useImagePreloader(preloadSrcList);
+
   return (
     <header className="flex flex-wrap items-center justify-between max-w-[1900px] mx-auto overflow-x-hidden sm:flex-col sm:items-start md:flex-row md:items-center ">
       <motion.div

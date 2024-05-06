@@ -27,6 +27,7 @@ export default function Input({
       <input
         type={type}
         id={id}
+        autoComplete="on"
         className="h-10 w-full border border-[#2C2C2C] p-2 font-sans text-sm font-normal focus-visible:outline-primary-200"
         {...register(name, registerOption)}
         name={name}
