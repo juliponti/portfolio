@@ -1,18 +1,22 @@
 import { useState } from "react";
 import ExperienceCard from "./work-experience-card";
 import {
-  backCard1,
-  backCard2,
-  backCard3,
-  frontCard1,
-  frontCard2,
-  frontCard3,
+ frontAltimetrik,
+ backAltimetrik,
+ frontFC,
+ backFC,
+ frontSifted,
+ backSifted,
+ frontWDT,
+ backWDT
+
 } from "./work-experience-data";
 
 export default function WorkExperience() {
   const [flipCard1, setFlipCard1] = useState(true);
   const [flipCard2, setFlipCard2] = useState(true);
   const [flipCard3, setFlipCard3] = useState(true);
+  const [flipCard4, setFlipCard4] = useState(true);
 
   return (
     <section className="py-[120px]">
@@ -22,22 +26,29 @@ export default function WorkExperience() {
           <ExperienceCard
             flip={flipCard1}
             onFlip={setFlipCard1}
-            front={frontCard1}
-            back={backCard1}
+            front={frontSifted}
+            back={backSifted}
           />
           <ExperienceCard
             flip={flipCard2}
             onFlip={setFlipCard2}
-            front={frontCard2}
-            back={backCard2}
+            front={frontAltimetrik}
+            back={backAltimetrik}
           />
           <ExperienceCard
             flip={flipCard3}
             onFlip={setFlipCard3}
-            front={frontCard3}
-            back={backCard3}
+            front={frontFC}
+            back={backFC}
           />
-        </div>
+          <ExperienceCard
+            flip={flipCard4}
+            onFlip={setFlipCard4}
+            front={frontWDT}
+            back={backWDT}
+            />
+            </div>
+     
       </div>
     </section>
   );

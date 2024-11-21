@@ -1,15 +1,16 @@
 import { RxDotFilled } from "react-icons/rx";
 import FrontCardLayout from "./card-layout/front-card-layout";
 import BackCardLayout from "./card-layout/back-card-layout";
-import altimetrikImg from "/src/assets/experience/altimetrik_logo.png";
-import fundingCircleImg from "/src/assets/experience/funding_circle_logo.png";
-import westernImg from "/src/assets/experience/western_digital_logo.png";
+import AltimetrikLogo from "/src/assets/experience/altimetrik_logo.png";
+import FundingCircleLogo from "/src/assets/experience/funding_circle_logo.png";
+import WDLogo from "/src/assets/experience/western_digital_logo.png";
+import SiftedLogo from '/src/assets/experience/sifted_logo.svg';
 
-export const frontCard1 = (
+export const frontAltimetrik = (
   <FrontCardLayout
     imgHref="https://www.altimetrik.com/"
     img={
-      <img src={altimetrikImg} alt="Altimetrik Logo" className="w-28 h-28" />
+      <img src={AltimetrikLogo} alt="Altimetrik Logo" className="w-28 h-28" />
     }
     title="Altimetrik"
   >
@@ -40,7 +41,7 @@ export const frontCard1 = (
   </FrontCardLayout>
 );
 
-export const backCard1 = (
+export const backAltimetrik = (
   <BackCardLayout>
     <>
       <p className="text-sm text-center mt-5">
@@ -59,12 +60,12 @@ export const backCard1 = (
   </BackCardLayout>
 );
 
-export const frontCard2 = (
+export const frontFC = (
   <FrontCardLayout
     imgHref="https://www.fundingcircle.com/uk/"
     img={
       <img
-        src={fundingCircleImg}
+        src={FundingCircleLogo}
         alt="Funding Circle Logo"
         className="w-40 h-40"
       />
@@ -94,7 +95,7 @@ export const frontCard2 = (
   </FrontCardLayout>
 );
 
-export const backCard2 = (
+export const backFC = (
   <BackCardLayout>
     <>
       <p className="text-sm text-center mt-5">
@@ -136,11 +137,11 @@ export const backCard2 = (
   </BackCardLayout>
 );
 
-export const frontCard3 = (
+export const frontWDT = (
   <FrontCardLayout
     imgHref="https://www.westerndigital.com/"
     img={
-      <img src={westernImg} alt="Western Digital Logo" className="w-52 h-52" />
+      <img src={WDLogo} alt="Western Digital Logo" className="w-52 h-52" />
     }
     title="Western Digital"
     tooltip="Altimetrik's client"
@@ -168,7 +169,7 @@ export const frontCard3 = (
   </FrontCardLayout>
 );
 
-export const backCard3 = (
+export const backWDT = (
   <BackCardLayout>
     <>
       <p className="text-sm text-center mt-5">
@@ -202,3 +203,74 @@ export const backCard3 = (
     </>
   </BackCardLayout>
 );
+
+
+export const frontSifted = (
+  <>
+  <FrontCardLayout
+    imgHref="https://sifted.com/"
+    img={
+      <img src={SiftedLogo} alt="Sifted Logo" className="w-52 h-52" />
+    }
+    title="Sifted"
+    tooltip="Sofware company"
+  >
+    <ul>
+      <li className="font-sans pb-4 text-[#686868] text-base flex gap-2">
+        <div className="relative  ml-5">
+          <p className="font-semibold">UI developer</p>
+          <p className="text-sm">temporary contract</p>
+          <p className="text-sm">May 2024 - Nov 2024</p>
+        </div>
+      </li>
+      <li>
+        <div className="ml-5">
+          <p className="text-sm">
+            <span className="font-semibold">Project: </span> Sifted AI
+          </p>
+          <p className="text-sm">
+            <span className="font-semibold">Methodologies: </span> scrum
+          </p>
+        </div>
+      </li>
+    </ul>
+  </FrontCardLayout>
+  </>
+)
+
+export const backSifted = (
+    <BackCardLayout>
+    <>
+      <p className="text-sm text-center mt-5">
+        I've worked close together with an agile team (API, UI and AnE) to developed an MVP of their new platform Sifted AI: The next iteration of their Logistics Intelligence product
+      </p>
+      <span className="text-left w-full text-sm">Stack :</span>
+      <ul className="text-sm w-full space-y-1">
+        <li className="flex gap-2">
+          <RxDotFilled className="mt-1" />
+          React JS (vite)
+        </li>
+        <li className="flex gap-2">
+          <RxDotFilled className="mt-1" />
+          React Query
+        </li>
+        <li className="flex gap-2">
+          <RxDotFilled className="mt-1" />
+          Tailwind / Shadcn UI
+        </li>
+        <li className="flex gap-2">
+          <RxDotFilled className="mt-1" />
+          Axios
+        </li>
+        <li className="flex gap-2">
+          <RxDotFilled className="mt-1" />
+          Zustand
+        </li>
+        <li className="flex gap-2">
+          <RxDotFilled className="mt-1" />
+          Recharts
+        </li>
+      </ul>
+    </>
+  </BackCardLayout>
+)
