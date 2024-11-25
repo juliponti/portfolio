@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import ContactForm from "./contact-form";
@@ -12,9 +13,9 @@ export default function Contact() {
           <p className="text-sm">
             Interested in collaborating? Don't hesitate to get in touch! Drop me
             a line here or at my email{" "}
-            <a className="underline" href="mailto:julieta.pontino@gmail.com">
+            <Link className="underline" to="mailto:julieta.pontino@gmail.com">
               julieta.pontino@gmail.com
-            </a>{" "}
+            </Link>{" "}
             to explore opportunities further. Remember, all fields are required!
           </p>
         </div>
