@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Footer from "../../components/footer/footer";
 import Navbar from "../../components/navbar";
+import { HiOutlineArrowUturnLeft } from "react-icons/hi2";
+import { useNavigate } from "react-router-dom";
 
 interface ProjectLayoutProps {
   title: string;
@@ -27,16 +29,24 @@ export default function ProjectLayout({
   liveLink,
   codeLink,
 }: ProjectLayoutProps) {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col items-center justify-between h-screen">
       <Navbar />
       <header className="relative z-10 flex flex-col items-center justify-between w-full max-w-[1900px] mx-auto lg:flex-row lg:ml-auto lg:mr-0 xl:mx-auto">
+        <button
+          className="absolute top-0 left-10 flex gap-2 items-center hover:text-primary-200"
+          type="button"
+          onClick={() => navigate(-1)}>
+          <HiOutlineArrowUturnLeft className="w-5 h-5" />
+          <span className="text-sm">Go back</span>
+        </button>
         <motion.div
           initial={{ opacity: 0, translateX: 100 }}
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.3 }}
-          className="w-4/5 mt-20 mb-16 lg:my-0 lg:w-2/5 lg:ml-[10%] "
-        >
+          className="w-4/5 mt-20 mb-16 lg:my-0 lg:w-2/5 lg:ml-[10%] ">
           <h2 className="font-sans uppercase italic text-base font-light">
             {technologies}
           </h2>
@@ -46,16 +56,14 @@ export default function ProjectLayout({
             <a
               className="text-sm uppercase tracking-wide transition-all hover:text-primary-200"
               target="_blank"
-              href={liveLink}
-            >
+              href={liveLink}>
               View live
             </a>
             {codeLink && (
               <a
                 className="text-sm uppercase tracking-wide transition-all hover:text-primary-200"
                 target="_blank"
-                href={codeLink}
-              >
+                href={codeLink}>
                 View code
               </a>
             )}
@@ -65,8 +73,7 @@ export default function ProjectLayout({
           initial={{ opacity: 0, translateX: -100 }}
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1 }}
-          className="w-4/5 lg:w-[45%] h-full"
-        >
+          className="w-4/5 lg:w-[45%] h-full">
           <img
             src={pcScreenshot.src}
             alt={pcScreenshot.alt}
@@ -82,8 +89,7 @@ export default function ProjectLayout({
                 <motion.div
                   initial={{ opacity: 0, translateX: 100 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 1 }}
-                >
+                  transition={{ duration: 1 }}>
                   <img
                     src={mobileScreenshot?.src}
                     alt={mobileScreenshot?.alt}

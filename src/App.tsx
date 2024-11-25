@@ -19,6 +19,8 @@ import SPACE_PC from "/src/assets/projects/beginnings/screenshots/space-screensh
 import SPACE_MOBILE from "/src/assets/projects/beginnings/screenshots/space-mobile.png";
 import MLH_PC from "/src/assets/projects/MLH-screenshot.png";
 import useImagePreloader from "./hooks/use-image-preloader";
+import RecentWorkCards from "./components/recent-projects/recent-projects-card";
+import BeginningsWorkCards from "./components/beginnings-projects-cards/beginnings-projects-cards";
 
 const preloadSrcList = [
   POKEDEX_PC,
@@ -45,9 +47,12 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Projects />}>
+          <Route path="recents" element={<RecentWorkCards />} />
+          <Route path="beginnings" element={<BeginningsWorkCards />} />
+        </Route>
         <Route
-          path="/projects/pokedex"
+          path="/projects/beginnings/pokedex"
           element={
             <ProjectLayout
               title="Pokedex"
@@ -57,8 +62,7 @@ function App() {
                   <a
                     href="https://twitter.com/courseitok"
                     target="_blank"
-                    className="font-semibold"
-                  >
+                    className="font-semibold">
                     CourseIt
                   </a>{" "}
                   course to learn how to consume an API. Given the public
@@ -82,7 +86,7 @@ function App() {
           }
         />
         <Route
-          path="/projects/mercado-libre"
+          path="/projects/beginnings/mercado-libre"
           element={
             <ProjectLayout
               title="Mercado Libre"
@@ -93,8 +97,7 @@ function App() {
                   <a
                     href="https://twitter.com/courseitok"
                     target="_blank"
-                    className="font-semibold"
-                  >
+                    className="font-semibold">
                     CourseIt
                   </a>{" "}
                   . Bootstrapped with Create React App. The goal was to create
@@ -117,7 +120,7 @@ function App() {
           }
         />
         <Route
-          path="/projects/magic-eight-ball"
+          path="/projects/beginnings/magic-eight-ball"
           element={
             <ProjectLayout
               title="Magic Eight Ball"
@@ -144,7 +147,7 @@ function App() {
           }
         />
         <Route
-          path="/projects/splitter"
+          path="/projects/beginnings/splitter"
           element={
             <ProjectLayout
               title="Tip Calculator App"
@@ -155,8 +158,7 @@ function App() {
                   <a
                     href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"
                     target="_blank"
-                    className="font-semibold"
-                  >
+                    className="font-semibold">
                     Tip calculator app challenge on Frontend Mentor
                   </a>
                   . Users should be able to: calculate the correct tip and total
@@ -180,7 +182,7 @@ function App() {
           }
         />
         <Route
-          path="/projects/to-do-list"
+          path="/projects/beginnings/to-do-list"
           element={
             <ProjectLayout
               title="To do list"
@@ -205,7 +207,7 @@ function App() {
           }
         />
         <Route
-          path="/projects/space-tourism"
+          path="/projects/beginnings/space-tourism"
           element={
             <ProjectLayout
               title="Space Tourism"
@@ -215,8 +217,7 @@ function App() {
                   <a
                     href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3"
                     target="_blank"
-                    className="font-semibold"
-                  >
+                    className="font-semibold">
                     Space tourism website challenge on Frontend Mentor
                   </a>{" "}
                   . The users should be able to: view each page and be able to
@@ -241,7 +242,7 @@ function App() {
           }
         />
         <Route
-          path="/projects/my-little-house"
+          path="/projects/recents/my-little-house"
           element={
             <ProjectLayout
               title="My Little House"

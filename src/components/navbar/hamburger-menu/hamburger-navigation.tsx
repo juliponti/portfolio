@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { navlinksData } from "../navlinks";
+import { navlinksData } from "../navlinks-data";
 
 export default function HamburgerNavigation() {
   const variants = {
@@ -37,8 +37,7 @@ export default function HamburgerNavigation() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             key={name}
-            className="uppercase tracking-[0.110rem] text-2xl  md:ml-7  hover:text-primary-200"
-          >
+            className="uppercase tracking-[0.110rem] text-2xl  md:ml-7  hover:text-primary-200">
             <a href={href}>{name}</a>
           </motion.li>
         ))}

@@ -1,14 +1,11 @@
-import { useState } from "react";
 import Footer from "../../components/footer/footer";
 import Navbar from "../../components/navbar/navbar";
 import Button from "../../components/ui/button";
-import RecentProjectsCards from "../../components/recent-projects/recent-projects-card";
-import BeginningsProjectsCards from "../../components/beginnings-projects-cards";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 
 export default function Projects() {
-  const [projectSelection, setProjectSelection] = useState({
-    section: "recent",
-  });
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className="flex flex-col h-screen justify-between">
@@ -21,28 +18,26 @@ export default function Projects() {
               <li>
                 <Button
                   className={
-                    projectSelection.section === "recent"
+                    location.pathname === "/projects/recents"
                       ? "bg-primary-200 text-white"
                       : "bg-primary-100"
                   }
                   onClick={() => {
-                    setProjectSelection({ section: "recent" });
-                  }}
-                >
-                  recent
+                    navigate("/projects/recents");
+                  }}>
+                  recents
                 </Button>
               </li>
               <li>
                 <Button
                   className={
-                    projectSelection.section === "beginnings"
+                    location.pathname === "/projects/beginnings"
                       ? "bg-primary-200 text-white"
                       : "bg-primary-100"
                   }
                   onClick={() => {
-                    setProjectSelection({ section: "beginnings" });
-                  }}
-                >
+                    navigate("/projects/beginnings");
+                  }}>
                   my beginnings
                 </Button>
               </li>
@@ -53,15 +48,10 @@ export default function Projects() {
       <main className="relative z-10">
         <section>
           <div className="wrapper">
-            {projectSelection.section === "recent" ? (
-              <RecentProjectsCards />
-            ) : (
-              <BeginningsProjectsCards />
-            )}
+            <Outlet />
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );

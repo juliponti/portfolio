@@ -5,4 +5,5 @@ export type Project = {
   alt: string;
   className?: string | undefined;
   id?: number;
+  isActive?: boolean;
 };
