@@ -1,15 +1,14 @@
 import { useState } from "react";
 import ExperienceCard from "./work-experience-card";
 import {
- frontAltimetrik,
- backAltimetrik,
- frontFC,
- backFC,
- frontSifted,
- backSifted,
- frontWDT,
- backWDT
-
+  frontAltimetrik,
+  backAltimetrik,
+  frontFC,
+  backFC,
+  frontSifted,
+  backSifted,
+  frontWDT,
+  backWDT,
 } from "./work-experience-data";
 
 export default function WorkExperience() {
@@ -19,7 +18,7 @@ export default function WorkExperience() {
   const [flipCard4, setFlipCard4] = useState(true);
 
   return (
-    <section className="py-[120px]">
+    <section className="pb-20">
       <div className="max-w-[1200px] w-full mx-auto sm:w-4/5 ">
         <h3 className="text-center pb-10 lowercase">Work Experience</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 row-auto gap-5">
@@ -46,9 +45,8 @@ export default function WorkExperience() {
             onFlip={setFlipCard4}
             front={frontWDT}
             back={backWDT}
-            />
-            </div>
-     
+          />
+        </div>
       </div>
     </section>
   );

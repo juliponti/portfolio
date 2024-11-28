@@ -250,12 +250,13 @@ function App() {
                 <>
                   A collaborative freelancer project for a client that wanted a
                   backroom web app for an English Language Institute called "My
-                  Little House". Some functionalities include adding courses and
-                  students, charging invoices, seeing statistics, controlling
-                  the incomes, the outcomes, etc.{" "}
+                  Little House". Built using server components some
+                  functionalities include adding courses and students, charging
+                  invoices, seeing statistics, controlling the incomes, the
+                  outcomes, and more{" "}
                 </>
               }
-              technologies="Next JS | Prisma | Shadcn UI"
+              technologies="Next JS 14 | Prisma | Shadcn UI"
               pcScreenshot={{
                 src: MLH_PC,
                 alt: "web screenshot of an app customize by me",

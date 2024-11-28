@@ -13,9 +13,9 @@ export default function Home() {
       <Header />
       <main>
         <MainQuote />
-        <RecentWork />
-        <Contact />
         <WorkExperience />
+        <Contact />
+        <RecentWork />
       </main>
       <Footer />
     </>
