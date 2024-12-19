@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Project } from "../../types";
 import MLH_IMG from "/src/assets/projects/1.png";
+import TAYLORDLE_IMG from "/src/assets/projects/taylordle.png";
 import { Link } from "react-router-dom";
 
 const recentProjects: Project[] = [
@@ -12,20 +13,28 @@ const recentProjects: Project[] = [
     id: 1,
     isActive: true,
   },
+  {
+    name: "Taylordle Game",
+    path: "/projects/recents/taylordle-game",
+    src: TAYLORDLE_IMG,
+    alt: "A minimalistic house made of black lines with flowers",
+    id: 2,
+    isActive: true,
+  },
 ];
 
 export default function RecentWorkCards() {
   return (
     <>
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 row-auto gap-3 pb-10"
+        className="grid grid-cols-1 md:grid-cols-3  row-auto gap-3 pb-10"
         initial={{ opacity: 0, translateY: 50 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.5 }}>
         {recentProjects.map(({ name, path, src, id, alt, isActive }) => (
           <motion.div
             key={id}
-            className="relative col-start-2"
+            className="relative"
             whileHover={{ scale: 0.94 }}>
             <img src={src} alt={alt} className="rounded-2xl w-full " />
             {isActive ? (

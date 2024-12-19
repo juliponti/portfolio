@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
@@ -18,6 +18,8 @@ import TO_DO_LIST_MOBILE from "/src/assets/projects/beginnings/screenshots/to-do
 import SPACE_PC from "/src/assets/projects/beginnings/screenshots/space-screenshot.png";
 import SPACE_MOBILE from "/src/assets/projects/beginnings/screenshots/space-mobile.png";
 import MLH_PC from "/src/assets/projects/MLH-screenshot.png";
+import TAYLORDLE_SCREENSHOT from "/src/assets/projects/taylordle-screenshot.png";
+
 import useImagePreloader from "./hooks/use-image-preloader";
 import RecentWorkCards from "./components/recent-projects/recent-projects-card";
 import BeginningsWorkCards from "./components/beginnings-projects-cards/beginnings-projects-cards";
@@ -36,6 +38,7 @@ const preloadSrcList = [
   SPACE_PC,
   SPACE_MOBILE,
   MLH_PC,
+  TAYLORDLE_SCREENSHOT,
 ];
 
 function App() {
@@ -262,6 +265,43 @@ function App() {
                 alt: "web screenshot of an app customize by me",
               }}
               liveLink="https://my-little-house-demo-git-engl-b5826a-julietas-projects-dee94194.vercel.app/students"
+            />
+          }
+        />
+        <Route
+          path="/projects/recents/taylordle-game"
+          element={
+            <ProjectLayout
+              title="Taylordle Game"
+              description={
+                <>
+                  This is the final project of{" "}
+                  <Link
+                    to="https://www.joyofreact.com/"
+                    className="underline hover:text-primary-200">
+                    The Joy of React
+                  </Link>{" "}
+                  course. It is a replica of the game <strong>Wordle</strong>,
+                  but I have customized it with a Taylor Swift theme for a more
+                  personal touch.
+                  <p>
+                    The goal of the game is to deduce the word in six guesses or
+                    fewer. A green background indicates a correctly placed
+                    letter; a yellow/orange background that the letter is part
+                    of the word but in the wrong position and a dark gray
+                    background indicates the letter is not part of the word at
+                    all.
+                  </p>
+                  The hidden word relates to Taylor Swift's music and life.
+                </>
+              }
+              technologies="React | CSS3 | JavaScript"
+              pcScreenshot={{
+                src: TAYLORDLE_SCREENSHOT,
+                alt: "a wordle clone screenshot",
+              }}
+              liveLink="https://juliponti.github.io/project-wordle/"
+              codeLink="https://github.com/juliponti/project-wordle"
             />
           }
         />
