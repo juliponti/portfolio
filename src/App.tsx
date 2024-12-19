@@ -278,6 +278,7 @@ function App() {
                   This is the final project of{" "}
                   <Link
                     to="https://www.joyofreact.com/"
+                    target="_blank"
                     className="underline hover:text-primary-200">
                     The Joy of React
                   </Link>{" "}
