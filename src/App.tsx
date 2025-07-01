@@ -19,6 +19,7 @@ import SPACE_PC from "/src/assets/projects/beginnings/screenshots/space-screensh
 import SPACE_MOBILE from "/src/assets/projects/beginnings/screenshots/space-mobile.png";
 import MLH_PC from "/src/assets/projects/MLH-screenshot.png";
 import TAYLORDLE_SCREENSHOT from "/src/assets/projects/taylordle-screenshot.png";
+import ISELL_SCREENSHOT from "/src/assets/projects/iphone-screenshot.png";
 
 import useImagePreloader from "./hooks/use-image-preloader";
 import RecentWorkCards from "./components/recent-projects/recent-projects-card";
@@ -39,6 +40,7 @@ const preloadSrcList = [
   SPACE_MOBILE,
   MLH_PC,
   TAYLORDLE_SCREENSHOT,
+  ISELL_SCREENSHOT,
 ];
 
 function App() {
@@ -303,6 +305,72 @@ function App() {
               }}
               liveLink="https://juliponti.github.io/project-wordle/"
               codeLink="https://github.com/juliponti/project-wordle"
+            />
+          }
+        />
+        <Route
+          path="/projects/recents/iSell-iPhone"
+          element={
+            <ProjectLayout
+              title="iSell iPhone"
+              description={
+                <>
+                  This is web app for a client that wanted to keep track of
+                  their iPhones and products sales.
+                  <p className="mt-4">
+                    The functionalities include:
+                    <ul className="mt-2">
+                      <li className="list-disc ml-6">
+                        Add, edit, delete and sell iPhones and products
+                      </li>
+                      <li className="list-disc ml-6">
+                        See the total amount of profits per day and per month
+                      </li>
+                      <li className="list-disc ml-6">
+                        See the total amount of iPhones sold per day
+                      </li>
+                      <li className="list-disc ml-6">
+                        See the total amount of sales per day
+                      </li>
+                      <li className="list-disc ml-6">
+                        See the current stock of iPhones and products
+                      </li>
+                      <li className="list-disc ml-6">
+                        Filter the iPhones by model
+                      </li>
+                      <li className="list-disc ml-6">
+                        See the current exchange rate
+                      </li>
+                    </ul>
+                  </p>
+                  <p className="mt-4">
+                    Stack & Tools:
+                    <ul className="mt-2">
+                      <li className="list-disc ml-6">
+                        Next JS 15 - App Router - Server Actions
+                      </li>
+                      <li className="list-disc ml-6">
+                        Tailwind CSS / Shadcn UI
+                      </li>
+                      <li className="list-disc ml-6">TypeScript</li>
+                      <li className="list-disc ml-6">Prisma - PostgreSQL</li>
+                      <li className="list-disc ml-6">Zod - Validation</li>
+                      <li className="list-disc ml-6">
+                        React Hook Form - Form Handling
+                      </li>
+                      <li className="list-disc ml-6">Recharts - Charts</li>
+                      <li className="list-disc ml-6">Vercel - Deployment</li>
+                      <li className="list-disc ml-6">Neon Database</li>
+                    </ul>
+                  </p>
+                </>
+              }
+              technologies="Next JS 15 | Tailwind CSS | Shadcn UI"
+              pcScreenshot={{
+                src: ISELL_SCREENSHOT,
+                alt: "a screenshot of the iSell iPhone app",
+              }}
+              liveLink="https://hello-iphone-app-demo.vercel.app"
             />
           }
         />

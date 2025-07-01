@@ -57,7 +57,7 @@ export default function ProjectLayout({
               className="text-sm uppercase tracking-wide transition-all hover:text-primary-200"
               target="_blank"
               href={liveLink}>
-              View live
+              View demo
             </a>
             {codeLink && (
               <a

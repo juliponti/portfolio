@@ -2,23 +2,32 @@ import { motion } from "framer-motion";
 import { Project } from "../../types";
 import MLH_IMG from "/src/assets/projects/1.png";
 import TAYLORDLE_IMG from "/src/assets/projects/taylordle.png";
+import ISell_IMG from "/src/assets/projects/iphone.png";
 import { Link } from "react-router-dom";
 
 const recentProjects: Project[] = [
   {
-    name: "My little house",
-    path: "/projects/recents/my-little-house",
-    src: MLH_IMG,
-    alt: "A minimalistic house made of black lines with flowers",
-    id: 1,
+    name: "iSell iPhone",
+    path: "/projects/recents/iSell-iPhone",
+    src: ISell_IMG,
+    alt: "An iPhone silhouette",
+    id: 3,
     isActive: true,
   },
   {
     name: "Taylordle Game",
     path: "/projects/recents/taylordle-game",
     src: TAYLORDLE_IMG,
-    alt: "A minimalistic house made of black lines with flowers",
+    alt: "A grid of letters",
     id: 2,
+    isActive: true,
+  },
+  {
+    name: "My little house",
+    path: "/projects/recents/my-little-house",
+    src: MLH_IMG,
+    alt: "A minimalistic house made of black lines with flowers",
+    id: 1,
     isActive: true,
   },
 ];
